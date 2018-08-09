@@ -3,29 +3,9 @@
 <head>
 <title>Page Title</title>
 <link rel="stylesheet" href="style.css">
-<style>
-* {
-    box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-</style>
 </head>
 <body>
-  <h2>Cheat Sheet</h2>
+  <h2 class = "Main" >Cheat Sheet</h2>
 
 <div class="row">
   <div class="column" style="background-color:#aaa;">
@@ -47,18 +27,21 @@
     <p> $ git commit -m "[descriptive message]" </p>
   </div>
   <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
+    <h2>Group Changes</h2>
+    <p>$ git branch</p>
+    <p>$ git branch [-name]</p>
+    <p>$ git checkout [branch -name]</p>
+    <p>& git merge [branch]</p>
+    <p>$git branch -d [branch -name]</p>
+
+    <h2>Review History</h2>
+    <p>$ git log </p>
+    <p>$ git log --gollow [file] </p>
+    <p>$ gut diff [first-branch]...[second-branch]</p>
+    <p>git show [commit]</p>
   </div>
 </div>
 <img src="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 " alt="github logo">
-</body>
-
-
-
-
-
-
 </body>
 </html>
